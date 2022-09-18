@@ -24,7 +24,7 @@ function App() {
 
     console.log(e);
 
-      const bg = document.querySelector('.background-image');
+      const bg = document.querySelector('background-image');
       const windowWidth = window.innerWidth / 5;
       const windowHeight = window.innerHeight / 5 ;
 
