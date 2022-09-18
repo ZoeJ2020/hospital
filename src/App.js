@@ -7,10 +7,10 @@ function App() {
   const windowHeight = window.innerHeight / 5 ;
 
   bg.addEventListener('mousemove', () => {
-    const mouseX = clientX / windowWidth;
-    const mouseY = clientY / windowHeight;
+    // const mouseX = clientX / windowWidth;
+    // const mouseY = clientY / windowHeight;
   
-    bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+    // bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
   });
 
   return (
