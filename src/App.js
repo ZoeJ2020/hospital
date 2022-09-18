@@ -19,23 +19,25 @@ function App() {
   //   console.log('bg eventlistener is working');
   // });
 
-  const logLoad = () => {
+  const logLoad = (e) => {
     console.log('body has loaded');
 
-      const bg = document.querySelector('.background-image');
-      const windowWidth = window.innerWidth / 5;
-      const windowHeight = window.innerHeight / 5 ;
+    console.log(e);
 
-      bg.addEventListener('mousemove', (e) => {
-        e.preventDefault();
+      // const bg = document.querySelector('.background-image');
+      // const windowWidth = window.innerWidth / 5;
+      // const windowHeight = window.innerHeight / 5 ;
 
-        const mouseX = e.clientX / windowWidth;
-        const mouseY = e.clientY / windowHeight;
+      // bg.addEventListener('mousemove', (e) => {
+      //   e.preventDefault();
+
+      //   const mouseX = e.clientX / windowWidth;
+      //   const mouseY = e.clientY / windowHeight;
       
-        bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+      //   bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
 
-        console.log('bg eventlistener is working');
-      });
+      //   console.log('bg eventlistener is working');
+      // });
   }
 
   return (
