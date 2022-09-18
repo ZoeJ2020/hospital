@@ -24,9 +24,11 @@ function App() {
 
     console.log(e);
 
-      // const bg = document.querySelector('.background-image');
-      // const windowWidth = window.innerWidth / 5;
-      // const windowHeight = window.innerHeight / 5 ;
+      const bg = document.querySelector('.background-image');
+      const windowWidth = window.innerWidth / 5;
+      const windowHeight = window.innerHeight / 5 ;
+
+    console.log(`${bg}, ${windowWidth}, ${windowHeight}`)
 
       // bg.addEventListener('mousemove', (e) => {
       //   e.preventDefault();
