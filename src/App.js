@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <div className="App" onLoad={logLoad}>
+    <div className="App" onLoad={logLoad()}>
       <header className="App-header">
         <h1>Hover me</h1>
         <div className="background-image"></div>
