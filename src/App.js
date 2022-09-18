@@ -22,8 +22,8 @@ function App() {
   })
   console.log('JS has loaded');
 
-  // const logLoad = (e) => {
-  //   console.log('body has loaded');
+  const logLoad = (e) => {
+    console.log('body has loaded');
 
   //   console.log(e);
 
@@ -43,7 +43,7 @@ function App() {
 
       //   console.log('bg eventlistener is working');
       // });
-  // }
+  }
 
   return (
     <div className="App" onLoad={logLoad()}>
