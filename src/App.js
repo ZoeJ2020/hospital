@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'; //required for query selector work
+import React, { useEffect } from 'react'; //required for query selector work
 
 import './App.css';
 
