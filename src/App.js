@@ -4,26 +4,42 @@ import './App.css';
 
 function App() {
 
-  useEffect(() => {
-    const bg = document.querySelector('.background-image');
-    const windowWidth = window.innerWidth / 5;
-    const windowHeight = window.innerHeight / 5 ;
+  const changeSky = () => {
 
-    bg.addEventListener('mousemove', (e) => {
-      e.preventDefault();
+    let sky = document.getElementById('container__sky').classList;
+    sky.toggle('night');
 
-      const mouseX = e.clientX / windowWidth;
-      const mouseY = e.clientY / windowHeight;
-    
-      bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
-    });
-  })
+    let stars = document.getElementById('container__sky__stars').style;
+
+    // check if night class is currrently active = nighttime is on
+    if(sky.contains('night')) //if nighttime is on
+    {
+      stars.display = 'flex'; //turn on stars
+    } else //if not then
+    {
+      stars.display = 'none'; //turn off stars
+    }
+
+  }
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hover me</h1>
-        <div className="background-image"></div>
+        <div id="container__sky">
+
+        <div id="container__sky__stars">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+        </div>
+
+          <div className="container__sky__button">
+            {/* <button id='skyButton' onClick={() => changeSky('night')}>Toggle</button> */}
+            <button id='skyButton' onClick={changeSky}>Toggle</button>
+          </div>
+          <div className="container__field">
+            <img src="" alt="" />
+          </div>
+        </div>
       </header>
     </div>
   );
