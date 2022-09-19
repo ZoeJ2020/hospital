@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -31,8 +32,9 @@ function App() {
         </div>
 
           <div className="container__sky__button">
-            {/* <button id='skyButton' onClick={() => changeSky('night')}>Toggle</button> */}
-            <button id='skyButton' onClick={changeSky}>Toggle</button>
+            <button id='skyButton' onClick={changeSky}>
+              <i className="fa-solid fa-sun"></i>
+            </button>
           </div>
           <div className="container__field">
             <img src="" alt="" />
