@@ -33,7 +33,9 @@ function App() {
 
           <div className="container__sky__button">
             <button id='skyButton' onClick={changeSky}>
-              <i className="fa-solid fa-sun"></i>
+              <i className="fa-solid fa-sun">
+                TESTTESTTESTTEST
+              </i>
             </button>
           </div>
           <div className="container__field">
